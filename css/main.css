@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap'); 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 955px;
+    margin: 0 auto;
+    font-family: "Nunito", sans-serif;
+}
+body{
+    background-image: url(../imgs/bg.png);
+    background-color: #2B2E34;
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+li{
+    list-style: none;
+}
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+.links{
+    display: flex;
+    gap: 40px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    transition: all .2s ease;
+}
+.links a:hover{
+    color: #00C2FF;
+}
+main .container{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+.company h1{
+    font-size: 42px;
+}
+.company p{
+    font-size: 20px;
+    padding: 10px 0px;
+    color: #AFC0E2;
+    margin-bottom: 30px;
+}
+.block{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 320px;
+    flex-wrap: wrap;
+}
+.box{
+    
+    width: 300px;
+    background-color: #0D1423;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+    position: relative;
+    padding: 50px 0px;
+    margin-bottom: 40px;
+}
+.box div{
+    position: absolute;
+    top: -22px;
+    left: 41%;
+}
+#bar{
+    display: none;
+}
+.box p{
+    font-size: 16px;
+    color: #AFC0E2;
+    text-align: center;
+}
+@media(max-width: 990px){
+    body{
+        background-image: url(../imgs/ipad.png);
+    }
+    .company h1{
+        font-size: 32px;
+    }
+    .container{
+        width: 90%;
+    }
+    .box:nth-child(1){
+        width: 100%;
+    }
+    .box:nth-child(1)  div{
+        left: 47%;
+    }
+    .box1{
+        width: 47%;
+    }
+
+
+}
+@media(max-width: 447px){
+    body{
+        background-image: url(../imgs/Phone\ \(1\).png);
+    }
+    nav .container{
+        padding: 10px 0px;
+    }
+    .container{
+        width: 90%;
+    }
+     main .container{
+        margin-top: 0px;
+    }
+    .company h1{
+        font-size: 35px;
+    }
+    .company p{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .links{
+        display: none;
+    }
+    #bar{
+        display: block;
+        color: white;
+        font-size: 30px;
+    }
+    .box{
+        width: 100%;
+    }
+    .box div{
+        left: 41% !important;
+    }
+    .box p{
+        font-size: 14px !important;
+    }
+}
